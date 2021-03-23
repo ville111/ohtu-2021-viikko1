@@ -55,7 +55,6 @@ class TestVarasto(unittest.TestCase):
        # mikä tässä mättää? Eikö saldon pitäisi olla 10?
         self.assertAlmostEqual(self.varasto.ota_varastosta(300),0.0)
 
-
     def test_lisaa_negatiivinen_varastoon(self):
         maara = 10
         self.varasto.lisaa_varastoon(-10)
